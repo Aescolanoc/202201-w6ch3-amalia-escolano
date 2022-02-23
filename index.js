@@ -12,7 +12,7 @@ commander.option('--port <port>', 'Server Port');
 commander.parse(process.argv);
 const options = commander.opts();
 
-const PORT = options.port || process.env.PORT;
+const PORT = options.port || process.env.PORT || 3000;
 
 http.createServer((req, resp) => {
     const myUrl = url.parse(req.url);
