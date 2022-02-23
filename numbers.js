@@ -6,5 +6,8 @@ export function numbers(query) {
     numbers.push(number);
     number = arr[1].replaceAll('b', '');
     numbers.push(number);
+    if (isNaN(numbers[0]) || isNaN(numbers[1])) {
+        process.exit(1);
+    }
     return numbers;
 }

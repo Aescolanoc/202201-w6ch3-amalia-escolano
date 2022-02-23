@@ -35,5 +35,9 @@
     },
     "jest": {
         "testEnvironment": "node"
+    },
+    "dependencies": {
+        "commander": "^9.0.0",
+        "dotenv": "^16.0.0"
     }
 }
