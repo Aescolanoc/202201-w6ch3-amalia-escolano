@@ -1,7 +1,3 @@
-export function args(args) {
-    return args.slice(2);
-}
-
 export function calculator(args) {
     const [a, b] = [...args];
     const result = `
